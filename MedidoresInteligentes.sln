@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedidoresInteligentes", "MedidoresInteligentes\MedidoresInteligentes.csproj", "{86E7F279-499A-4CE2-AF16-BC626A3AFC21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86E7F279-499A-4CE2-AF16-BC626A3AFC21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E7F279-499A-4CE2-AF16-BC626A3AFC21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E7F279-499A-4CE2-AF16-BC626A3AFC21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E7F279-499A-4CE2-AF16-BC626A3AFC21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0988059F-CAC7-4E40-AA93-E7CA81770927}
+	EndGlobalSection
+EndGlobal
