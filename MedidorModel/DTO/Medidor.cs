@@ -8,7 +8,7 @@ namespace MedidorModel.DTO
 {
     public class Medidor
     {
-        private int numMedidor;
+        private int id_medidor;
         private int tipo;
         private Lectura valorCon;
 
@@ -27,7 +27,7 @@ namespace MedidorModel.DTO
                 return tipoTxt;
             }
         }
-        public int NumMedidor { get => numMedidor; set => numMedidor = value; }
+        public int Id_Medidor { get => id_medidor; set => id_medidor = value; }
         public int Tipo { get => tipo; set => tipo = value; }
         public Lectura ValorCon { get => valorCon; set => valorCon = value; }
         
