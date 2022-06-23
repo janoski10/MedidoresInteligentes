@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MedidorModel.DAL
 {
-    interface IntMedidor
+    public interface IntMedidor
     {
         List<Medidor> ObtenerMedidor();
             
