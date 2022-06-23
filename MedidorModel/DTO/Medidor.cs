@@ -19,9 +19,11 @@ namespace MedidorModel.DTO
                 string tipoTxt = "";
                 switch (tipo)
                 {
-                    case 1: tipoTxt = "Inteligente";
+                    case 1:
+                        tipoTxt = "Inteligente";
                         break;
-                    case 2: tipoTxt = "Antiguo";
+                    case 2:
+                        tipoTxt = "Antiguo";
                         break;
                 }
                 return tipoTxt;
@@ -30,6 +32,7 @@ namespace MedidorModel.DTO
         public int Id_Medidor { get => id_medidor; set => id_medidor = value; }
         public int Tipo { get => tipo; set => tipo = value; }
         public Lectura ValorCon { get => valorCon; set => valorCon = value; }
-        
+
     }
+}
 }

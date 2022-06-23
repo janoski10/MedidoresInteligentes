@@ -10,8 +10,7 @@ namespace MedidorModel.DAL
     public interface IntMedidor
     {
         List<Medidor> ObtenerMedidor();
-            
-        void AgregarMedidor(Medidor medidor);
 
+        void AgregarMedidor(Medidor medidor);
     }
 }
