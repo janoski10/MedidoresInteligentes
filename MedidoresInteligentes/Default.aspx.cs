@@ -16,29 +16,37 @@ namespace MedidoresInteligentes
         private IntMedidor MedidoresDAL = new MedidorDALObjetos();
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Medidor> medidores = MedidoresDAL.ObtenerMedidor();
+            if (!IsPostBack)
+            {
+                List<Medidor> medidores = MedidoresDAL.ObtenerMedidor();
+                this.NumMedidorDdl.DataSource = medidores;
+                this.NumMedidorDdl.DataBind();
+            }
         }
 
         protected void agregarBtn_CLick(object sender, EventArgs e)
         {
             int nummedidor = this.NumMedidorDdl.SelectedIndex;
-
-            DateTime fecha = this.FechaC.SelectedDate;
+            DateTime fecha = Fecha.SelectedDate;
             DateTime hora = Convert.ToDateTime(this.HrsLectura.Text.Trim());
             DateTime minutos = Convert.ToDateTime(this.MinLectura.Text.Trim());
             decimal valconsumo = Convert.ToDecimal(this.ValConsumo.Text.Trim());
 
+            List<Medidor> medidors = MedidoresDAL.ObtenerMedidor();
+            Medidor medidor = medidors.Find(b => b.Id_Medidor == this.NumMedidorDdl.SelectedIndex);
 
             Lectura lectura = new Lectura()
             {
-                NumMedidor = nummedidor,
                 Fecha = fecha,
                 Hora = hora,
-                
+                Minutos = minutos,
                 ValorCon = valconsumo
             };
 
+            lecturaDAL.AgregarLectura(lectura);
+
             this.mensajesLbl.Text = "Lectura Ingresada";
+            Response.Redirect("VerLectura.aspx");
         }
 
 

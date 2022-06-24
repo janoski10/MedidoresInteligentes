@@ -33,5 +33,9 @@ namespace MedidorModel.DTO
         public int Tipo { get => tipo; set => tipo = value; }
         public Lectura ValorCon { get => valorCon; set => valorCon = value; }
 
+        public override string ToString()
+        {
+            return id_medidor + "| " + tipo + "| " + valorCon;    
+        }
     }
 }

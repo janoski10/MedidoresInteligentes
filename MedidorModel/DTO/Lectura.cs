@@ -8,13 +8,13 @@ namespace MedidorModel.DTO
 {
     public class Lectura
     {
-        private Medidor numMedidor;
+        private Medidor id_medidor;
         private DateTime fecha;
         private DateTime hora;
         private DateTime minutos;
         private decimal valorCon;
 
-        public Medidor NumMedidor { get => numMedidor; set => numMedidor = value; }
+        public Medidor Id_Medidor { get => id_medidor; set => id_medidor = value; }
         public DateTime Fecha { get => fecha; set => fecha = value; }
         public DateTime Hora { get => hora; set => hora = value; }
         public DateTime Minutos { get => minutos; set => minutos = value; }
@@ -22,8 +22,11 @@ namespace MedidorModel.DTO
 
         public override string ToString()
         {
-            return numMedidor + "| " + Fecha + "| " + valorCon;
+            return id_medidor + "| " + Fecha + "| " + valorCon;
         }
+
+
     }
 }
 }
+    

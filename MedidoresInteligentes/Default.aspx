@@ -13,11 +13,13 @@
                 <div class="card-body">
                     <div class="form-group">
                         <label for="NumMedidor">Numero de Medidor</label>
-                        <asp:DropDownList ID="NumMedidorDdl" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="NumMedidorDdl" runat="server">
+
+                        </asp:DropDownList>
                     </div>
                     <div class="form-group">
                         <label for="Fecha">Fecha de la Lectura</label>
-                        <asp:Calendar ID="FechaC" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
+                        <asp:Calendar ID="Fecha" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
                             <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
                             <NextPrevStyle VerticalAlign="Bottom" />
                             <OtherMonthDayStyle ForeColor="#808080" />
@@ -41,7 +43,7 @@
                         <asp:TextBox ID="ValConsumo" runat="server"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:Button runnat="server" ID="agregarBtn" OnClick="agregarBtn_Click" Text="Agregar" CssClass="btn btn-primary btn-lg"/>
+                        <asp:Button runat="server" ID="agregarBtn" OnClick="agregarBtn_CLick" Text="Agregar" CssClass="btn btn-primary btn-lg"/>
                     </div>
                 </div>
             </div>

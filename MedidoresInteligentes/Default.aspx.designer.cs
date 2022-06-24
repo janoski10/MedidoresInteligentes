@@ -33,13 +33,13 @@ namespace MedidoresInteligentes
         protected global::System.Web.UI.WebControls.DropDownList NumMedidorDdl;
 
         /// <summary>
-        /// Control FechaC.
+        /// Control Fecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar FechaC;
+        protected global::System.Web.UI.WebControls.Calendar Fecha;
 
         /// <summary>
         /// Control HrsLectura.
@@ -67,5 +67,14 @@ namespace MedidoresInteligentes
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ValConsumo;
+
+        /// <summary>
+        /// Control agregarBtn.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button agregarBtn;
     }
 }
