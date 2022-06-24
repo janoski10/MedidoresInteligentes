@@ -43,11 +43,10 @@
                         <asp:TextBox ID="ValConsumo" runat="server"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:Button runat="server" ID="agregarBtn" OnClick="agregarBtn_CLick" Text="Agregar" CssClass="btn btn-primary btn-lg"/>
+                        <asp:Button runat="server" ID="agregarBtn" Text="Agregar" CssClass="btn btn-primary btn-lg" OnClick="agregarBtn_Click" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </asp:Content>

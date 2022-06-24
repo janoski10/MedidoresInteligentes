@@ -24,7 +24,7 @@ namespace MedidoresInteligentes
             }
         }
 
-        protected void agregarBtn_CLick(object sender, EventArgs e)
+        protected void agregarBtn_Click(object sender, EventArgs e)
         {
             int nummedidor = this.NumMedidorDdl.SelectedIndex;
             DateTime fecha = Fecha.SelectedDate;
@@ -48,7 +48,5 @@ namespace MedidoresInteligentes
             this.mensajesLbl.Text = "Lectura Ingresada";
             Response.Redirect("VerLectura.aspx");
         }
-
-
     }
 }

@@ -22,4 +22,3 @@ namespace MedidorModel.DAL
 
     }
 }
-}

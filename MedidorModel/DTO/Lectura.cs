@@ -28,5 +28,4 @@ namespace MedidorModel.DTO
 
     }
 }
-}
     
