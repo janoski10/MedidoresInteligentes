@@ -12,5 +12,7 @@ namespace MedidorModel.DAL
         List<Medidor> ObtenerMedidor();
 
         void AgregarMedidor(Medidor medidor);
+
+        List<Medidor> Filtrar(int tipo);
     }
 }

@@ -20,5 +20,10 @@ namespace MedidorModel.DAL
             return medidores;
         }
 
+        public List<Medidor> Filtrar(int tipo)
+        {
+            return medidores.FindAll(c => c.Tipo == tipo);
+        }
+
     }
 }

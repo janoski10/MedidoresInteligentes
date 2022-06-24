@@ -11,16 +11,25 @@ namespace MedidoresInteligentes
 {
 
 
-    public partial class VerMedidor
+    public partial class VerMedidores
     {
 
         /// <summary>
-        /// Control selectMedidor.
+        /// Control tipoDdl.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectMedidor;
+        protected global::System.Web.UI.WebControls.DropDownList tipoDdl;
+
+        /// <summary>
+        /// Control grillaMedidor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grillaMedidor;
     }
 }
