@@ -33,6 +33,7 @@
                     <div class="form-group">
                         <label for="HrsLectura">Hora de la lectura</label>
                         <asp:TextBox ID="HrsLectura" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator CssClass="text-danger" ControlToValidate="HrsLectura" ID="ValHrs" runat="server" ErrorMessage="Ingrese Hora Correcta"></asp:RequiredFieldValidator>
                     </div>
                     <div class="form-group">
                         <label for="MinLectura">Minutos de la lectura</label>
